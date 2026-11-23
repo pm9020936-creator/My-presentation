@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabin Gharti Magar - Myagdi, Nepal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Full-page Himalayan mountain background with dark overlay for crisp white text */
+            background-image: linear-gradient(rgba(10, 15, 28, 0.62), rgba(10, 15, 28, 0.72)), 
+                              url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, rgba(0, 56, 147, 0.85) 0%, rgba(220, 20, 60, 0.85) 100%);
+            backdrop-filter: blur(6px);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .flag-container {
+            margin-bottom: 1rem;
+        }
+
+        .nepal-flag {
+            width: 80px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Transparent Sections Blending Directly With Mountain Background */
+        .transparent-section {
+            background: transparent;
+            padding: 1.5rem 0;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .transparent-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .transparent-section h2 {
+            color: #ffffff;
+            border-bottom: 3px solid #DC143C;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            font-size: 1.8rem;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+        }
+
+        .transparent-section p {
+            color: #f3f4f6;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+        }
+
+        /* Photo Gallery Section */
+        .photo-wrapper {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .village-photo {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .caption {
+            margin-top: 0.8rem;
+            font-style: italic;
+            color: #e5e7eb;
+            font-size: 0.95rem;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Map Section */
+        .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 1.2rem;
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: rgba(10, 15, 28, 0.85);
+            color: #d1d5db;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Nepal Flag & Name -->
+    <header>
+        <div class="flag-container">
+            <!-- Official Flag of Nepal SVG -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg" 
+                 alt="Flag of Nepal" 
+                 class="nepal-flag">
+        </div>
+        <h1>Prabin Gharti Magar</h1>
+        <p>From the scenic hills of Myagdi, Nepal</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Me Section (No white background) -->
+        <section class="transparent-section">
+            <h2>About Me</h2>
+            <p>
+                Namaste! My name is <strong>Prabin Gharti Magar</strong>. I am proud to hail from 
+                <strong>Myagdi District</strong> in Gandaki Province, Nepal. Growing up surrounded by 
+                majestic mountains, lush green hills, and rich Magar culture has shaped who I am today.
+            </p>
+        </section>
+
+        <!-- Hometown & Ruma Gaun Photo Section (No white background) -->
+        <section class="transparent-section">
+            <h2>My Hometown: Ruma Gaun, Myagdi</h2>
+            <p>
+                <strong>Ruma Gaun</strong> is a peaceful and picturesque village nestled in the hills of Myagdi. 
+                Known for its stunning Himalayan views, terraced fields, and warm community spirit, it is a place 
+                I always call home.
+            </p>
+            <div class="photo-wrapper">
+                <!-- Replace 'ruma-gaun.jpg' with your actual local photo file path -->
+                <img src="ruma-gaun.jpg" 
+                     onerror="this.src='https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?auto=format&fit=crop&w=1000&q=80'" 
+                     alt="Scenic view of Ruma Gaun, Myagdi, Nepal" 
+                     class="village-photo">
+                <p class="caption">Scenic landscape of Ruma Gaun, Myagdi, Nepal</p>
+            </div>
+        </section>
+
+        <!-- Nepal & Myagdi Map Section -->
+        <section class="transparent-section">
+            <h2>Explore Myagdi on the Map of Nepal</h2>
+            <p>
+                Myagdi lies in the western hills of Nepal, serving as a gateway to the Dhaulagiri mountain range.
+            </p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449567.8923564844!2d83.21853685!3d28.53237315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39be1d1b0f94b63b%3A0x673992e80c82c7d7!2sMyagdi!5e0!3m2!1sen!2snp!4v1700000000000" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Prabin Gharti Magar | Proudly from Myagdi, Nepal 🇳🇵</p>
+    </footer>
+
+</body>
+</html>
